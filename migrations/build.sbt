@@ -2,6 +2,7 @@
 //resolvers += Resolver.sonatypeRepo("snapshots")
 
 libraryDependencies ++= List(
-  "com.liyaos" %% "scala-forklift-slick" % "0.2.0-BETA"
-  ,"com.zaxxer" % "HikariCP" % "2.3.9"
+  "com.liyaos" %% "scala-forklift-slick" % "0.2.1"
+  ,"com.typesafe.slick" %% "slick-hikaricp" % "3.1.1"
+  ,"com.h2database" % "h2" % "1.4.190"
 )
