@@ -5,13 +5,13 @@ addCommandAlias("mgm", "migration_manager/run")
 addCommandAlias("mg", "migrations/run")
 
 
-lazy val slickVersion = "3.1.1"
+lazy val slickVersion = "3.2.1"
 
-lazy val forkliftVersion = "0.2.3"
+lazy val forkliftVersion = "0.3.0"
 
 lazy val commonSettings = Seq(
   version := "1.0",
-  scalaVersion := "2.11.8",
+  scalaVersion := "2.12.3",
   scalacOptions += "-deprecation",
   scalacOptions += "-feature",
   resolvers ++= Seq(
@@ -34,7 +34,7 @@ lazy val dbDependencies = List(
 
 lazy val forkliftDependencies = List(
   "com.liyaos" %% "scala-forklift-slick" % forkliftVersion
-  ,"io.github.nafg" %% "slick-migration-api" % "0.3.0"
+  ,"io.github.nafg" %% "slick-migration-api" % "0.4.1"
 )
 
 lazy val appDependencies = dbDependencies ++ loggingDependencies
